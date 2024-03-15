@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tipo de letra (POPPINS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Libreria de iconos de BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulario Responsivo</title>
+</head>
+<body>
+    <main class="contenedor">
+        <h1 class="titulo">Registro</h1>
+
+        <form action="#" class="formulario">
+            <fieldset class="formulario__seccion">
+                <legend class="formulario__seccion-titulo">Información personal</legend>
+            
+                <div class="formulario__contenedor">
+                    <div class="formulario__campo formulario__campo--20">
+                        <label class="formulario__label">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ejem. Alejandro" class="formulario__input" required autocomplete="off">
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--20">
+                        <label class="formulario__label">Apellido Paterno</label>
+                        <input type="text" name="appat" id="appat" placeholder="Ejem. Ramírez" class="formulario__input" required autocomplete="off">
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--20">
+                        <label class="formulario__label">Apellido materno</label>
+                        <input type="text" name="apmat" id="apmat" placeholder="Ejem. Pérez" class="formulario__input" required autocomplete="off">
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--20">
+                        <label class="formulario__label">Sexo</label>
+                        <select name="sexo" id="sexo" class="formulario__input">
+                            <option value="0">Seleccionar</option>
+                            <option value="1">Hombre</option>
+                            <option value="2">Mujer</option>
+                            <option value="3">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--15">
+                        <label class="formulario__label">Celular</label>
+                        <input type="text" name="celular" id="celular" placeholder="Ejem. 2714569987" class="formulario__input" required autocomplete="off" maxlength="10">
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--15">
+                        <label class="formulario__label">Teléfono</label>
+                        <input type="text" name="telefono" id="telefono" placeholder="Ejem. 2714569987" class="formulario__input" required autocomplete="off" maxlength="10">
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--50">
+                        <label class="formulario__label">Correo</label>
+                        <input type="email" name="correo" id="correo" placeholder="Ejem. gustavo2024@gmail.com" class="formulario__input" required autocomplete="off">
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--100">
+                        <label class="formulario__label">Domicilio</label>
+                        <input type="text" name="domicilio" id="domicilio" placeholder="Ejem. Av. Del Paseo Numero 120" class="formulario__input" required autocomplete="off">
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset class="formulario__seccion">
+                <legend class="formulario__seccion-titulo">Información académica</legend>
+            
+                <div class="formulario__contenedor">
+                    <div class="formulario__campo formulario__campo--40">
+                        <label class="formulario__label">Nombre de la institución</label>
+                        <input type="text" name="nombre_escuela" id="nombre_escuela" placeholder="Ejem. Instituto Tecnológico de Orizaba" class="formulario__input" required autocomplete="off">
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--40">
+                        <label class="formulario__label">Domicilio de la institución</label>
+                        <input type="text" name="domicilio_escuela" id="domicilio_escuela" placeholder="Ejem. Oriente 9, entre sur 5 y 6" class="formulario__input" required autocomplete="off">
+                    </div>
+
+                    <radiogroup class="formulario__campo formulario__campo--40">
+                        <label class="formulario__label">Selecciona la carrera cursada</label>
+
+                        <div class="formulario__rc">
+                            <div class="formulario__input-rc">
+                                <input type="radio" id="carrera_1" name="carrera" value="carrera_1"> 
+                                <label for="carrera_1" class="formulario__label-rc">ING. ELECTRICA</label>
+                            </div>
+                            <div class="formulario__input-rc">
+                                <input type="radio" id="carrera_2" name="carrera" value="carrera_2">
+                                <label for="carrera_2" class="formulario__label-rc">ING. EN SISTEMAS COMPUTACIONALES</label>
+                            </div>
+                            <div class="formulario__input-rc">
+                                <input type="radio" id="carrera_3" name="carrera" value="carrera_3"> 
+                                <label for="carrera_3" class="formulario__label-rc">ING. EN GESTION EMPRESARIAL</label>
+                            </div>
+                        </div>
+                    </radiogroup>
+
+                    <div class="formulario__campo formulario__campo--40">
+                        <label class="formulario__label">Selecciona alguna especialidad</label>
+
+                        <div class="formulario__rc">
+                            <div class="formulario__input-rc">
+                                <input type="checkbox" id="esp_1" name="carrera" value="esp_1"> 
+                                <label for="esp_1" class="formulario__label-rc">HTML & CSS</label>
+                            </div>
+                            <div class="formulario__input-rc">
+                                <input type="checkbox" id="esp_2" name="carrera" value="esp_2">
+                                <label for="esp_2" class="formulario__label-rc">JavaScript</label>
+                            </div>
+                            <div class="formulario__input-rc">
+                                <input type="checkbox" id="esp_3" name="carrera" value="esp_3"> 
+                                <label for="esp_3" class="formulario__label-rc">PHP & SQL</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="formulario__seccion">
+                <legend class="formulario__seccion-titulo">Proyectos destacados</legend>
+            
+                <div class="formulario__contenedor">
+                    <div class="formulario__campo formulario__campo--40">
+                        <label class="formulario__label">Nombre del proyecto</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ejem. Aplicación PROLINE" class="formulario__input" required autocomplete="off">
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--20">
+                        <label class="formulario__label">Fecha de inicio</label>
+                        <input type="month" name="fecha_inicio" id="fecha_inicio" class="formulario__input" required>
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--20">
+                        <label class="formulario__label">Fecha de fin</label>
+                        <input type="month" name="fecha_fin" id="fecha_fin" class="formulario__input" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="formulario__seccion">
+                <legend class="formulario__seccion-titulo">Archivos adicionales</legend>
+            
+                <div class="formulario__contenedor">
+                    <div class="formulario__campo formulario__campo--30">
+                        <label class="formulario__label">Añadir archivo PDF</label>
+
+                        <div class="formulario__archivo rojo">
+                            <label for="foto_perfil" class="formulario__archivo-label">
+                                <i class='bx bx-file' ></i>
+                                Cargar PDF
+                            </label>
+                            <input type="file" name="foto_perfil" id="foto_perfil" class="formulario__archivo-input">
+                        </div>
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--30">
+                        <label class="formulario__label">Añadir video</label>
+
+                        <div class="formulario__archivo verde">
+                            <label for="foto_perfil" class="formulario__archivo-label">
+                                <i class='bx bx-video'></i>
+                                Cargar video
+                            </label>
+                            <input type="file" name="foto_perfil" id="foto_perfil" class="formulario__archivo-input">
+                        </div>
+                    </div>
+
+                    <div class="formulario__campo formulario__campo--30">
+                        <label class="formulario__label">Añadir imagen</label>
+
+                        <div class="formulario__archivo azul">
+                            <label for="foto_perfil" class="formulario__archivo-label">
+                                <i class='bx bx-image-add'></i>
+                                Cargar imagen
+                            </label>
+                            <input type="file" name="foto_perfil" id="foto_perfil" class="formulario__archivo-input">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="formulario__boton">
+                Enviar
+                <i class='bx bx-send'></i>
+            </button>
+        </form>
+    </main>
+</body>
+</html>
